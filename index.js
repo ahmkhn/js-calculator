@@ -35,5 +35,10 @@ function operate(operator,num1,num2)
 }
 // operator function complete.
 
-
-const x = document.getElementById("displayValue").innerText; // stores display value.
+let currentDisplayValue = document.querySelector("#displayValue").innerHTML // stores display value.
+console.log(currentDisplayValue,"before clear");
+function clearButton()
+{
+    document.getElementById("displayValue").innerHTML="0";
+    currentDisplayValue=document.querySelector("#displayValue").innerHTML;
+}
