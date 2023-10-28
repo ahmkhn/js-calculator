@@ -5,29 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js" defer></script>
-    <title>Calculator by Ahmed</title>
+    <title>Simple Calculator</title>
 </head>
 <body>
-    <div class="buttonWrapper">
-        <button onclick="addValuesToDisplay(0)">0</button>
-        <button onclick="addValuesToDisplay(1)">1</button>
-        <button onclick="addValuesToDisplay(2)">2</button>
-        <button onclick="addValuesToDisplay(3)">3</button>
-        <button onclick="addValuesToDisplay(4)">4</button>
-        <button onclick="addValuesToDisplay(5)">5</button>
-        <button onclick="addValuesToDisplay(6)">6</button>
-        <button onclick="addValuesToDisplay(7)">7</button>
-        <button onclick="addValuesToDisplay(8)">8</button>
-        <button onclick="addValuesToDisplay(9)">9</button>
-        <button onclick="operatorFromButton('+')">+</button>
-        <button onclick="operatorFromButton('-')">-</button>
-        <button onclick="operatorFromButton('*')">*</button>
-        <button onclick="operatorFromButton('/')">/</button>
-        <button onclick="calculateValue('=')">=</button>
-        <button onclick="clearButton()">clear!</button>
+    <div class="button-wrapper">
+        <div class="top-buttons">
+            <button onclick="addValuesToDisplay(1)">1</button>
+            <button onclick="addValuesToDisplay(2)">2</button>
+            <button onclick="addValuesToDisplay(3)">3</button>
+            <button onclick="operatorFromButton('+')">+</button>
+            <button onclick="calculateValue('=')">=</button>
+        </div>
+        <div class="middle-buttons">
+            <button onclick="addValuesToDisplay(4)">4</button>
+            <button onclick="addValuesToDisplay(5)">5</button>
+            <button onclick="addValuesToDisplay(6)">6</button>
+            <button onclick="operatorFromButton('-')">-</button>
+            <button onclick="operatorFromButton('/')">/</button>
+        </div>
+        <div class="bottom-buttons">
+            <button onclick="addValuesToDisplay(7)">7</button>
+            <button onclick="addValuesToDisplay(8)">8</button>
+            <button onclick="addValuesToDisplay(9)">9</button>
+            <button onclick="addValuesToDisplay(0)">0</button>
+            <button onclick="operatorFromButton('*')">*</button>
+        </div>
+        <div class="even-more-bot">
+            <button onclick="clearButton()">clear!</button>
+        </div>
     </div>
     <div class="displayWrapper">
-        <h1 id="displayValue">209</h1>
+        <div class="box">
+            <h1 id="displayValue">0</h1>
+        </div>
+
     </div>
 
 </body>

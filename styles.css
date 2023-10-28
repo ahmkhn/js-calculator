@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+*{
+    font-family:'Roboto',sans-serif;
+}
+
+.button-wrapper{
+    display:flex;
+    flex-direction:column;
+    height:80vh;
+    justify-content: center;
+    align-items: center;
+}
+.top-buttons {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 12px; 
+}
+.middle-buttons {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 13.7px; 
+}
+.bottom-buttons {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 12px; 
+}
+button{
+    background-color: #007bff; /* Background color */
+    color: #fff;              /* Text color */
+    padding: 10px 20px;       /* Padding inside the button */
+    border: none;             /* Remove button border */
+    border-radius: 5px;       /* Rounded corners */
+    cursor: pointer;          /* Add a pointer cursor on hover */
+    font-size: 16px;          /* Font size */
+    font-weight: bold;        /* Font weight */
+    text-transform: uppercase; /* Convert text to uppercase */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    transition: background-color 0.2s, transform 0.2s;
+    margin:3px;
+}
+button:hover{
+
+    background-color: #0056b3; /* Background color on hover */
+    transform: scale(1.05);     /* Slight scale-up on hover */
+}
+.displayWrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:-35rem;
+}
+.box {
+    max-width: 300px; /* Set a maximum width for the box */
+    background-color: #007bff;
+    color: #fff;
+    padding-left: 150px;
+    padding-right:150px;
+    border: 2px solid #0056b3;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}

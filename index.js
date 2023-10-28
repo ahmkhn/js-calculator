@@ -71,12 +71,10 @@ function calculateValue(value)
             let val1 =""
             let val2 = parsedString[1];
             let val3 = "";
-            // val1 = 7, val2 = *, val 3 = 5
-            let returnValue = operate(val2,val1,val3);
-            console.log(returnValue);        // this approach works for 7*5 but not 7*55 as the 2nd '5' is stored in the 4th variable.
+            // val1 = 7, val2 = *, val 3 = 5       // this approach works for 7*5 but not 7*55 as the 2nd '5' is stored in the 4th variable.
             // set val1 to concatenation of values before operator, set val 3 to concatenation of values after operator.
             let x = false; // we are on value 1, operator has NOT been parsed yet.
-            for(let i =0;i<parsedString.length-1;i++)
+            for(let i =0;i<parsedString.length;i++)
             {
                 
                 if(parsedString[i]!='-' && parsedString[i]!='*' && parsedString[i]!='/' &&parsedString[i]!='+' && x==false)
@@ -96,5 +94,9 @@ function calculateValue(value)
                 
             }
             console.log(val1,val2,val3);
+            let returnValue = operate(val2,parseInt(val1),parseInt(val3));
+            console.log(returnValue)
+            document.getElementById("displayValue").innerHTML=returnValue;
+
     }
 }
