@@ -34,3 +34,6 @@ function operate(operator,num1,num2)
     }
 }
 // operator function complete.
+
+
+const x = document.getElementById("displayValue").innerText; // stores display value.
